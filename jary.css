@@ -1,0 +1,12 @@
+body{
+    background-color:rgb(199, 20, 20);
+}
+input{
+    border:2px solid;
+}
+#submitbutton{
+    border:2px solid;
+    text-shadow:2px 2px 5px;
+    
+}
+
