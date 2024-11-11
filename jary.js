@@ -5,7 +5,7 @@ let user;
 submitbutton.onclick=function(){
      user = inputuser.value;
 
-      if(user.replace(' ', '').toLowerCase() == 'romantic-action'){
+      if(user.replace(/\s+/g, '').toLowerCase() == 'romantic-action'){
          location.replace('nom-act.html');
       }
 
