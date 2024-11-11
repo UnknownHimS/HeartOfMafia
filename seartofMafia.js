@@ -19,7 +19,7 @@ darkmode.onclick=function(){
         darkmode.textContent='darkmode🌙';
         
         document.body.style='white';
-        document.body.style.backgroundImage = `url('/zafiarom.png')`;
+        document.body.style.backgroundImage = `url('zafiarom.png')`;
         document.body.style.backgroundRepeat = 'no-repeat';
         document.body.style.bodybackgroundSize = '50%';
         document.body.style.backgroundPosition= 'right 0px';
