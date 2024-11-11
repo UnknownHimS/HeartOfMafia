@@ -46,7 +46,7 @@
     text-shadow: 3px 3px 4px black;
 }
 body{
-    background-image: url('/zafiarom.png');
+    background-image: url('zafiarom.png');
     background-repeat: no-repeat;
     background-size:50%;
     background-position-x: right;
