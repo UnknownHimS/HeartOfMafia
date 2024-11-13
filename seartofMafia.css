@@ -49,7 +49,7 @@ html, body{
     text-shadow: 3px 3px 4px black;
 }
 body{
-    background-image: url('zafiarom.png');
+    background-image: url('/zafiarom.png');
     background-repeat: no-repeat;
     background-size:50%;
     background-position-x: right;
@@ -82,10 +82,13 @@ body{
        background-image: none;    
     }
     #sentenceContainer{
-        display: grid;
-        grid-auto-columns:auto ;
-        font-size:clamp(5px, 2vw, 10px);
+        margin:0 auto;
+        top: 240px;
+
+      
+        font-size:clamp(5px, 5vw, 10px);
         word-wrap: break-word;
+        position:absolute;
     }
     #chapter1{
         font-size: small;
@@ -98,4 +101,3 @@ body{
         font-size: 10px;
     }
 }
-
