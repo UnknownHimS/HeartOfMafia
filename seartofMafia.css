@@ -77,18 +77,27 @@ body{
     
    
 }
-@media(max-width:660px){
+@media(min-width:200px) and (max-width: 599px){
     body{
        background-image: none;    
+       width: 100%;
     }
     #sentenceContainer{
-        margin:0 auto;
-        top: 240px;
-
-      
-        font-size:clamp(5px, 5vw, 10px);
-        word-wrap: break-word;
-        position:absolute;
+        
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width:100%;
+       
+       
+       
+    }
+    #sentenceContainer pre{
+        font-size:clamp(5px, 5vw, 15px);
+        flex-wrap: break-word;
+        white-space: normal;
+        width: 90%;
+        line-height:1.7;
     }
     #chapter1{
         font-size: small;
@@ -99,5 +108,10 @@ body{
     }
     #darkmode{
         font-size: 10px;
+    }
+}
+@media(max-width:1282px){
+    body{
+        background-image: none;
     }
 }
