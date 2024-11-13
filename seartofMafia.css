@@ -1,3 +1,6 @@
+html, body{
+    overflow-x:hidden;
+}
 .back{
     position:absolute;
     margin:0px 20px;
@@ -46,11 +49,13 @@
     text-shadow: 3px 3px 4px black;
 }
 body{
-    background-image: url('zafiarom.png');
+    background-image: url('/zafiarom.png');
     background-repeat: no-repeat;
     background-size:50%;
     background-position-x: right;
-    
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+    width:100%;
 
 }
 #chapter1{
@@ -60,11 +65,7 @@ body{
     text-shadow: 3px 3px 4px;
 
 }
-#line{
-   rotate:90deg;
-   border:4px solid;
-   box-shadow:3px 3px 5px;
-}
+
 #sentenceContainer{
     position:absolute;
     margin:245px 0px;
@@ -73,4 +74,28 @@ body{
     font-weight: 100;
     letter-spacing:1.2px;
 
+    
+   
 }
+@media(max-width:660px){
+    body{
+       background-image: none;    
+    }
+    #sentenceContainer{
+        display: grid;
+        grid-auto-columns:auto ;
+        font-size:clamp(5px, 2vw, 10px);
+        word-wrap: break-word;
+    }
+    #chapter1{
+        font-size: small;
+    }
+    #title{
+         font-size: 15px;
+         margin: 140px 40px;
+    }
+    #darkmode{
+        font-size: 10px;
+    }
+}
+
