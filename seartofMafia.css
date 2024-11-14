@@ -96,14 +96,15 @@ body{
         font-size:clamp(5px, 5vw, 15px);
         flex-wrap: break-word;
         white-space: normal;
-        width: 90%;
+        width: 60%;
         line-height:1.7;
+        
     }
     #chapter1{
         font-size:clamp(8px, 4vw, 25px);
     }
     #title{
-        font-size:clamp(10px, 5vw, 25px);
+         font-size:clamp(10px, 5vw, 25px);
          margin: 0 auto;
          top:130px;
          left:70px;
@@ -114,8 +115,19 @@ body{
         font-size: 10px;
     }
 }
-@media(max-width:1282px){
+@media(min-width:1282px){
     body{
         background-image: flex;
     }
 }
+@media(min-width: 400px) and (max-width:599px){
+    #title{
+        margin:0px -30px;
+    }
+}
+@media(min-width: 100px) and (max-width:399px){
+    #title{
+        margin:0px -70px;
+    }
+}
+
