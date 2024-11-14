@@ -30,8 +30,9 @@ darkmode.onclick=function(){
        darkmode.textContent='lightmode⚡';
        darkmode.style.color='white';
        sentenceContainer.style.margin='150px 0px';
-       title.style.margin='35px 400px';
-       chapter1.style.margin='90px 100px';
+       
+       
+     
        pre1.textContent=`
           In a world where everyone has their own fears  and weaknesses, a man named Denzo has none. He is 
          
@@ -40,7 +41,24 @@ darkmode.onclick=function(){
  way, and he is a genius with an IQ surpassing Albert Einstein's, scoring at 240.
     
     
-`
+`;      
+        if(window.innerWidth > 200 && window.innerWidth < 399 ){
+            title.style.margin='-25px -70px';
+            chapter1.style.margin='70px 100px';
+            
+        }
+        else if(window.innerWidth > 600 && window.innerWidth < 800 ){
+            title.style.margin='35px 200px';
+        }
+        
+        else if(window.innerWidth > 801 &&  window.innerWidth < 1281 ){
+            title.style.margin='35px 300px';
+        }
+        else{
+            title.style.margin='35px 400px';
+            chapter1.style.margin='90px 100px';
+            
+        }
        
        
     }
@@ -48,7 +66,7 @@ darkmode.onclick=function(){
         darkmode.textContent='darkmode🌙';
         
         document.body.style='white';
-        document.body.style.backgroundImage = `url('/zafiarom.png')`;
+        document.body.style.backgroundImage = `url('zafiarom.png')`;
         document.body.style.backgroundRepeat = 'no-repeat';
         document.body.style.bodybackgroundSize = '50%';
         document.body.style.backgroundPosition= 'right 0px';
