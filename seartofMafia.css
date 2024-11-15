@@ -96,7 +96,7 @@ body{
         font-size:clamp(5px, 5vw, 15px);
         flex-wrap: break-word;
         white-space: normal;
-        width: 60%;
+        width: 90%;
         line-height:1.7;
         
     }
